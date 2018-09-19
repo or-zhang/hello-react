@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class home extends Component {
@@ -35,6 +35,7 @@ export default class home extends Component {
                        <button className="btn btn-primary" onClick={this.onMakeOlder}>Make me older</button>
                         <div>
                             <h4>hobbies</h4>
+			    <h5>{content}</h5>	
                             <ul>
                                 {this.props.user.hobbies.map((hobby) => <li key={hobby}>{hobby}</li>)}
                             </ul>
